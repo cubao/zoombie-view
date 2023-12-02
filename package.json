@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "author": "zedongh <248348907@qq.com>",
+  "scripts": {
+    "dev": "umi dev",
+    "test": "npm run lint",
+    "build": "umi build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev",
+    "prepare": "husky install",
+    "lint": "eslint . --ext tsx,jsx,ts,js --fix --max-warnings=0",
+    "format": "prettier . --write"
+  },
+  "dependencies": {
+    "umi": "^4.0.89"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.40",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^40.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
+    "postcss": "^8.4.32",
+    "prettier": "3.1.0",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.3.2"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.--write": "prettier --write"
+  }
+}
